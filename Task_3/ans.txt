@@ -1,0 +1,13 @@
+Pola w tabeli bazy danych:
+1. ID - klucz główny
+2. Typ Użytkownika - osoba fizyczna albo firma
+3. Imię/Nazwa Firmy
+4. Adres Email
+5. NIP - dotyczy tylko firm
+6. Data Urodzenia - dotyczy tylko osób fizycznych
+
+Metody weryfikacyjne:
+1. Unikalność danych - Adres Email, NIP
+2. Walidacja adresu email - poprawna składnia
+3. Poprawność NIP
+4. Wiadomość weryfikacyjna na Adres Email
