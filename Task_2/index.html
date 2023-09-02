@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Kolumn</title>
+</head>
+<body>
+    <h1>Kalkulator Kolumn</h1>
+    <label for="cellInput">Podaj komórkę:</label>
+    <input type="text" id="cellInput" placeholder="np. A1">
+    <button onclick="convertCell()">Oblicz</button>
+    <p>Wynik: <span id="result"></span></p>
+
+    <script>
+        function convertCell() {
+            const cellInput = document.getElementById('cellInput').value;
+            const column = cellInput.match(/[A-Z]+/g);
+            const row = cellInput.match(/[0-9]+/g);
+            
+            if (column && row) {
+                const columnStr = column[0];
+                let columnValue = 0;
+
+                for (let i = 0; i < columnStr.length; i++) {
+                    const charCode = columnStr.charCodeAt(i) - 64; // ASCII code of 'A' is 65
+                    columnValue = columnValue * 26 + charCode;
+                }
+
+                const result = columnValue + '.' + row;
+                document.getElementById('result').textContent = result;
+            } 
+            else {
+                alert('Błędny format komórki. Przykład poprawnego formatu: A2, B2, A500');
+            }
+        }
+    </script>
+</body>
+</html>
