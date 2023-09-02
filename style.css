@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #636363;
+    font-weight: bold;
+    padding: 8px;
+    color: white;
+    width: 5vmax;
+}
+
+th.red {
+    background-color: red;
+}
+
+td {
+    border: 2px solid #636363;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+td.red {
+    color: red;
+}
