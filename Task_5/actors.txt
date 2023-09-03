@@ -1,0 +1,4 @@
+1. Pracownik - tworzy pismo wychodzące
+2. Kierownik - odpowiada za akceptację pisma od Pracownika
+3. Dyrektor - odpowiada za zatwierdzenie pisma po akceptacji przez Kierownika
+4. Zastępca - upoważniony do akceptacji/zatwierdzenia pisma zamiast osoby przebywającej na urlopie
