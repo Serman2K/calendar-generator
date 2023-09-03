@@ -1,0 +1,19 @@
+A - problem z relacją w bazie danych, "15" oznacza miejsce na którym znaku w zapytaniu sql wystąpił problem.
+Przyczyną może być brak takowej relacji w bazie danych lub błąd w zapytaniu/nazwie relacji.
+W celu rozwiązania problemu należy sprawdzić poprawność nazwy relacji oraz poprawność zapytania sql.
+
+B - błąd znajduje się w danych wprowadzonych przez użytkownika, w celu wypisania wniosku należy wprowadzić
+poprawną datę.
+
+C - błąd polega na przekształceniu ciągu znaków "30B" w liczbę całkowitą(integer) w systemie dziesiętnym.
+Aby zlikwidować błąd należy poprawić dane wejściowe(usunąć "B") albo znaleźć sposób na przekonwertowanie wartości
+z systemu szesnastkowego na dziesiętny.
+
+D - Komunikat informuje nas o błędzie przy eksporcie danych, aby dowiedzieć się więcej warto sprawdzić logi systemowe,
+ułatwi na to dokładna godzina podana w komunikacie.
+
+E - komunikat wskazuje, że przeglądarka miała problem z załadowaniem zasobów z sieci. 
+Przyczyną może być brak dostępu do zasobu, brak dostępu do internetu lub błąd serwera.
+Należy sprawdzić czy urządzenie ma dostęp do internetu/sieci, czy lokalizacja i nazwa zasobu
+jest prawidłowa. Może też być to spowodowane obciążeniem serwera - wtedy chwila odczekania może wystarczyć.
+W ramach dodatkowej obsługi błędu można stworzyć zapasowy zasób który byłby wykorzystywany w takiej sytuacji.
